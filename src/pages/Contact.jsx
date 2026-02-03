@@ -33,14 +33,12 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // --- GÜNCELLENEN KISIM: WHATSAPP YÖNLENDİRMESİ ---
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Senin Numaran
     const phoneNumber = '905305435341';
 
-    // Mesaj Şablonu
+
     const message = `Merhaba, Zafer Ticaret web sitesinden yazıyorum.
     
 *Konu:* ${formData.selectedProduct}
@@ -49,10 +47,9 @@ const Contact = () => {
 
 *Mesaj:* ${formData.message}`;
 
-    // WhatsApp Linki Oluşturma
+
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Yeni sekmede aç
     window.open(url, '_blank');
   };
 

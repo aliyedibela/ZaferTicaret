@@ -122,7 +122,7 @@ const GubreGrubu = () => {
     }
   ];
 
-  // --- FİLTRELEME MANTIĞI ---
+
   const filteredProducts = gubreUrunleri.filter(item => {
     const categoryMatch = selectedCategory === 'all' || item.category === selectedCategory;
     const brandMatch = selectedBrand === 'all' || item.brand === selectedBrand;
@@ -131,7 +131,7 @@ const GubreGrubu = () => {
 
   return (
     <div className="gubre-container">
-      {/* HERO SECTION */}
+
       <section className="gubre-hero">
         <div className="gubre-hero-overlay"></div>
         <div className="container gubre-hero-content">
@@ -140,8 +140,6 @@ const GubreGrubu = () => {
           <p>Toprağınızın analiz değerlerine uygun, bitki gelişimini her aşamada destekleyen profesyonel gübre çeşitleri.</p>
         </div>
       </section>
-
-      {/* ÖZELLİKLER */}
       <section className="gubre-features-row container">
         <div className="gubre-f-card">
           <div className="gubre-f-icon"><FaVial /></div>
@@ -159,13 +157,10 @@ const GubreGrubu = () => {
           <p>Toprak yapısını bozmayan, sürdürülebilir tarımı destekleyen kaliteli içerik.</p>
         </div>
       </section>
-
-      {/* --- FİLTRE ALANI (YEM GRUBU MANTIĞI) --- */}
       <section className="advanced-filter container">
         <div className="filter-title"><FaFilter /> GÜBRE FİLTRELEME</div>
         
         <div className="filter-wrapper">
-          {/* 1. Kategori (Uygulama Zamanı) */}
           <div className="filter-group">
             <span className="f-head">Uygulama:</span>
             <div className="f-options">
@@ -174,21 +169,16 @@ const GubreGrubu = () => {
               <button className={selectedCategory === 'ust' ? 'active' : ''} onClick={() => setSelectedCategory('ust')}>Üst Gübre (Azot)</button>
             </div>
           </div>
-
-          {/* 2. Marka */}
           <div className="filter-group">
             <span className="f-head">Marka:</span>
             <div className="f-options">
               <button className={selectedBrand === 'all' ? 'active' : ''} onClick={() => setSelectedBrand('all')}>Tüm Markalar</button>
               <button className={selectedBrand === 'yesilbasak' ? 'active' : ''} onClick={() => setSelectedBrand('yesilbasak')}>Yeşil Başak</button>
-              {/* Gelecekte eklenecekler buraya */}
-              {/* <button onClick={() => setSelectedBrand('toros')}>Toros</button> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ÜRÜN LİSTESİ */}
       <section className="gubre-product-list container">
         <div className="section-title">
           <h2>

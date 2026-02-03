@@ -125,41 +125,39 @@
   .yem-item-image { height: 450px; }
   .yem-features-row { grid-template-columns: 1fr; margin-top: 20px; }
     .f-head { margin-bottom: 5px; font-size: 1.2rem; }
-  /* Mobilde filtre ayarları */
   .filter-group { flex-direction: column; align-items: flex-start; gap: 15px; }
   .f-options button { width: 100%; text-align: center; }
   .advanced-filter { padding: 30px; }
 }
-/* --- FİLTRE KUTUSU (FERAHLATILMIŞ) --- */
+
 .advanced-filter {
   background: white;
-  padding: 80px 70px;   /* ⬅️ ÜST-ALT 80px, SAĞ-SOL 70px */
-  margin-top: 120px;    /* ⬅️ yukarıdan ayır */
-  margin-bottom: 200px; /* ⬅️ aşağıdan ayır */
+  padding: 80px 70px;  
+  margin-top: 120px;  
+  margin-bottom: 200px; 
 }
 
 .filter-title {
-  font-size: 1.4rem; /* Başlığı büyüttük */
+  font-size: 1.4rem; 
   font-weight: 900; 
   color: #1e293b; 
   display: flex; align-items: center; gap: 15px;
-  margin-bottom: 40px; /* Başlık ile butonlar arasını açtık */
+  margin-bottom: 40px; 
   border-bottom: 2px solid #f1f5f9; 
   padding-bottom: 20px;
 }
 
-/* Satırlar arası mesafe */
 .filter-wrapper { 
   display: flex; 
   flex-direction: column; 
-  gap: 35px; /* Satır arasını açtık (20px -> 35px) */
+  gap: 35px; 
 }
 
 .filter-group {
   display: grid;
-  grid-template-columns: 180px 1fr; /* BAŞLIK ALANI GENİŞLEDİ */
+  grid-template-columns: 180px 1fr; 
   align-items: center;
-  column-gap: 40px; /* başlık–buton arası açıldı */
+  column-gap: 40px; 
 }
 
 
@@ -172,31 +170,27 @@
 
 
 .f-options { display: flex; flex-wrap: wrap; gap: 15px; }
-
-/* BUTONLAR (DAHA BÜYÜK VE RAHAT) */
 .f-options button {
   background: #f8fafc; 
   border: 1px solid #cbd5e1; 
   color: #64748b;
-  /* BUTON İÇİNİ GENİŞLETTİK */
   padding: 14px 30px; 
   border-radius: 50px; 
   cursor: pointer;
   font-weight: 700; 
   transition: all 0.3s ease; 
-  font-size: 1rem; /* Yazı boyutunu artırdık */
+  font-size: 1rem; 
 }
 
 .f-options button:hover {
   background: white; border-color: var(--primary); color: var(--primary); transform: translateY(-3px);
 }
 
-/* Aktif Buton */
 .f-options button.active {
   background: var(--primary); 
   color: white; 
   border-color: var(--primary);
-  box-shadow: 0 10px 20px rgba(21, 128, 61, 0.25); /* Gölge ekledik */
+  box-shadow: 0 10px 20px rgba(21, 128, 61, 0.25);
 }
 
 
