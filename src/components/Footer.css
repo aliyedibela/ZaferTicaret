@@ -1,0 +1,108 @@
+.footer {
+  background-color: #022c22;
+  color: #ecfccb;
+  padding-top: 40px; 
+  border-top: 4px solid var(--wheat);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.8fr 1.2fr; 
+  gap: 30px; 
+  padding-bottom: 30px; 
+}
+
+.footer-logo {
+  font-size: 1.6rem; 
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: inline-block;
+  letter-spacing: -0.5px;
+}
+.footer-logo span { color: var(--wheat); }
+.footer-logo .trade { color: white; }
+
+.footer-desc {
+  color: #94a3b8;
+  line-height: 1.5;
+  font-size: 0.85rem; 
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+.social-links { display: flex; gap: 10px; }
+
+.social-icon {
+  width: 35px; height: 35px; 
+  background: rgba(255,255,255,0.05);
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.social-icon:hover {
+  background: var(--wheat);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-col h3 {
+  color: white;
+  font-size: 1rem; 
+  font-weight: 700;
+  margin-bottom: 15px; 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.footer-links, .contact-list { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 8px; } 
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.85rem; 
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.footer-links a:hover { color: var(--wheat); padding-left: 5px; }
+
+.contact-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+}
+
+.contact-list a { color: #cbd5e1; text-decoration: none; transition: 0.3s; }
+.contact-list a:hover { color: var(--wheat); }
+
+.c-icon { color: var(--wheat); font-size: 1rem; margin-top: 2px; }
+
+.footer-bottom {
+  background: #01221a;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.footer-bottom p { color: #64748b; font-size: 0.8rem; margin: 0; }
+
+@media screen and (max-width: 960px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-desc { margin: 0 auto 20px auto; }
+  .social-links { justify-content: center; }
+  .contact-list li { justify-content: center; }
+}

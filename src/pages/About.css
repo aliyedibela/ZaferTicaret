@@ -1,0 +1,164 @@
+.about-page {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-header {
+  height: 350px;
+  position: relative;
+  background-image: url('/assets/images/slide1.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.header-overlay {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: rgba(2, 44, 34, 0.7); 
+}
+
+.header-content {
+  position: relative; z-index: 2; color: white;
+}
+
+.header-content h1 {
+  font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; letter-spacing: -1px;
+}
+
+.header-content p {
+  font-size: 1.2rem; font-weight: 500; color: var(--wheat);
+}
+
+.about-section { margin-bottom: 100px; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-img { position: relative; }
+
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.exp-badge {
+  position: absolute;
+  bottom: -30px; left: -30px;
+  background: var(--wheat);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+  border: 4px solid white;
+}
+
+.exp-badge .years {
+  display: block; font-size: 2.5rem; font-weight: 900; line-height: 1;
+}
+.exp-badge .text {
+  font-size: 0.9rem; font-weight: 600; text-transform: uppercase;
+}
+
+.sub-heading {
+  color: var(--primary); font-weight: 800; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;
+}
+
+.about-text h2 {
+  font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 10px 0 20px 0;
+}
+
+.about-text p {
+  color: #64748b; line-height: 1.7; margin-bottom: 20px; font-size: 1.05rem;
+}
+
+.about-list { list-style: none; padding: 0; margin-top: 20px; }
+.about-list li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.1rem; font-weight: 600; color: #334155; margin-bottom: 15px;
+}
+.check-icon { color: var(--primary); }
+
+
+.stats-strip {
+  background: var(--primary); 
+  padding: 80px 0;
+  margin-bottom: 100px;
+  color: white;
+  background-image: linear-gradient(135deg, var(--primary) 0%, #064e3b 100%);
+}
+
+.stats-grid {
+  display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; text-align: center;
+}
+
+.stat-icon { font-size: 3rem; color: var(--wheat); margin-bottom: 15px; }
+.stat-item h3 { font-size: 3rem; font-weight: 900; margin-bottom: 5px; }
+.stat-item p { font-size: 1.1rem; opacity: 0.9; font-weight: 500; }
+
+
+.section-title-center { text-align: center; margin-bottom: 50px; }
+.section-title-center h2 { font-size: 2.5rem; color: #1e293b; font-weight: 800; margin-bottom: 10px;}
+.title-line { width: 80px; height: 5px; background: var(--wheat); margin: 0 auto; border-radius: 3px;}
+
+.values-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;
+}
+
+.value-card {
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  border-bottom: 4px solid transparent;
+}
+
+.value-card:hover {
+  background: white;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  border-bottom: 4px solid var(--primary);
+}
+
+.v-icon-box {
+  width: 70px; height: 70px;
+  background: white;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; margin: 0 auto 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.value-card:hover .v-icon-box {
+  background: var(--primary); color: white;
+}
+
+.value-card h3 { font-size: 1.4rem; margin-bottom: 15px; color: #1e293b; }
+.value-card p { color: #64748b; line-height: 1.6; }
+
+
+@media screen and (max-width: 960px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-img { margin-bottom: 50px; padding-left: 20px; }
+  .header-content h1 { font-size: 2.5rem; }
+  .stats-grid { flex-direction: column; gap: 50px; }
+}

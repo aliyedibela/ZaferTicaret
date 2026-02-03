@@ -1,0 +1,134 @@
+.vm-page {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 100px; 
+}
+
+.vm-header {
+  height: 350px;
+  position: relative;
+  background-image: url('/assets/images/visionandmission.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+}
+
+.vm-overlay {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: rgba(2, 44, 34, 0.75); 
+}
+
+.vm-header-content { position: relative; z-index: 2; color: white; }
+.vm-header-content h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; letter-spacing: -1px; }
+.vm-header-content p { font-size: 1.3rem; color: var(--wheat); font-weight: 500; letter-spacing: 2px; }
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 120px; 
+  padding: 120px 40px; 
+  
+  align-items: center;
+  max-width: 1400px; 
+  margin: 0 auto;
+}
+
+.vm-subtitle {
+  font-size: 0.95rem; font-weight: 800; letter-spacing: 3px;
+  color: var(--primary); display: block; margin-bottom: 20px; 
+}
+
+.vm-text h2 {
+  font-size: 3rem;
+  font-weight: 900; 
+  color: #1e293b; 
+  margin-bottom: 35px; 
+  line-height: 1.1;
+}
+
+.vm-text p {
+  color: #64748b; 
+  line-height: 1.9; 
+  font-size: 1.1rem; 
+  margin-bottom: 30px; 
+}
+
+.vm-text strong { color: var(--primary); font-weight: 700; }
+.vm-image img {
+  width: 100%; 
+  border-radius: 20px; 
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15); 
+  transition: 0.4s ease;
+}
+
+.vm-image img:hover { transform: translateY(-10px); }
+
+.vm-icon-box {
+  width: 70px; height: 70px; 
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; 
+  margin-bottom: 30px; 
+}
+
+.mission-icon { background: #ecfccb; color: var(--primary); }
+.vision-icon { background: rgba(255,255,255,0.1); color: var(--wheat); }
+.vision-section {
+  background-color: var(--primary-dark); 
+  color: white;
+  margin-top: -5px;
+  padding: 20px 0; 
+}
+
+.vm-text.dark-mode h2 { color: white; }
+.vm-text.dark-mode p { color: #cbd5e1; } 
+.vm-text.dark-mode .vm-subtitle { color: var(--wheat); } 
+.vm-text.dark-mode strong { color: var(--wheat); }
+.goals-section { padding-top: 100px; padding-bottom: 50px; }
+
+.goals-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;
+}
+
+.goal-card {
+  background: white;
+  padding: 50px 30px; 
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative; overflow: hidden;
+}
+
+.goal-card::before {
+  content: ''; position: absolute; top:0; left:0; width:100%; height:5px;
+  background: var(--primary); transform: scaleX(0); transition: 0.3s;
+}
+
+.goal-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+.goal-card:hover::before { transform: scaleX(1); }
+
+.g-icon { font-size: 3.5rem; color: var(--wheat); margin-bottom: 25px; }
+.goal-card h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 20px; font-weight: 700; }
+.goal-card p { color: #64748b; line-height: 1.7; font-size: 1rem; }
+
+
+@media screen and (max-width: 960px) {
+
+  .vm-grid { 
+    grid-template-columns: 1fr; 
+    gap: 60px; 
+    padding: 60px 20px;
+  }
+  
+  .reverse-grid { display: flex; flex-direction: column-reverse; }
+  
+  .vm-header-content h1 { font-size: 2.5rem; }
+  .vm-text h2 { font-size: 2.2rem; }
+}

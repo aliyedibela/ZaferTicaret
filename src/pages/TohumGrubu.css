@@ -1,0 +1,100 @@
+.tohum-container {
+  background-color: #ffffff;
+  padding-bottom: 100px;
+}
+
+.tohum-hero {
+  height: 500px;
+  background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1770&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.tohum-hero-overlay {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: linear-gradient(to right, rgba(2, 44, 34, 0.9), rgba(2, 44, 34, 0.3));
+}
+
+.tohum-hero-content {
+  position: relative; z-index: 5;
+  color: white;
+  max-width: 800px;
+}
+
+.tohum-hero-content h1 { font-size: 3.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+.tohum-hero-content h1 span { color: var(--wheat); }
+.tohum-hero-content p { font-size: 1.2rem; opacity: 0.9; line-height: 1.6; }
+.tohum-tag { color: var(--wheat); font-weight: 800; letter-spacing: 2px; display: block; margin-bottom: 10px; }
+.tohum-features-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: -100px;
+  margin-bottom: 120px; 
+}
+
+.tohum-f-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  border-top: 5px solid #d97706; 
+  transition: 0.3s;
+    margin-bottom: -120px; 
+}
+
+.tohum-f-card:hover { transform: translateY(-10px); }
+.tohum-f-icon { font-size: 2.5rem; color: #d97706; margin-bottom: 20px; }
+.tohum-f-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: #1e293b; }
+.tohum-f-card p { font-size: 0.95rem; color: #64748b; line-height: 1.5; }
+.tohum-product-list { 
+  padding-top: 60px;
+}
+
+.section-title { 
+  text-align: center; 
+  margin-bottom: 60px; 
+}
+
+.section-title h2 { font-size: 2.8rem; font-weight: 900; color: #1e293b; margin-bottom: 15px;}
+.title-bar { width: 80px; height: 5px; background: var(--wheat); margin: 0 auto; border-radius: 3px; }
+.tohum-item-card {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 50px;
+  background: #fffcf5; 
+  border-radius: 24px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  border: 1px solid #fde68a;
+  transition: 0.4s ease;
+}
+.tohum-item-card:hover { border-color: #d97706; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+.tohum-item-image { height: 100%; }
+.tohum-item-image img { width: 100%; height: 100%; object-fit: cover; }
+.tohum-item-details { padding: 50px; display: flex; flex-direction: column; justify-content: center; }
+.tohum-item-badge { color: #d97706; font-weight: 800; font-size: 0.8rem; margin-bottom: 10px; }
+.tohum-item-details h3 { font-size: 2rem; color: #1e293b; margin-bottom: 20px; font-weight: 900; }
+.tohum-item-details p { color: #475569; line-height: 1.7; margin-bottom: 25px; font-size: 1.1rem; }
+.tohum-item-specs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+.tohum-spec-tag { background: white; padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; color: #d97706; border: 1px solid #fde68a; }
+.tohum-item-btns { display: flex; gap: 15px; }
+.tohum-btn-main {
+  background: var(--primary); color: white; padding: 15px 35px; border-radius: 10px;
+  text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 10px; transition: 0.3s;
+}
+.tohum-btn-wa {
+  background: #25D366; color: white; width: 55px; display: flex; align-items: center; justify-content: center;
+  border-radius: 10px; font-size: 1.4rem; text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .tohum-item-card { grid-template-columns: 1fr; }
+  .tohum-item-image { height: 250px; }
+  .tohum-features-row { grid-template-columns: 1fr; margin-top: 20px; }
+}
