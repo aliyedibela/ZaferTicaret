@@ -4,13 +4,12 @@ import './GubreGrubu.css';
 import { FaWhatsapp, FaArrowRight, FaVial, FaChartLine, FaLeaf, FaFilter } from 'react-icons/fa';
 
 const GubreGrubu = () => {
-  // --- STATE (FİLTRE HAFIZASI) ---
-  const [selectedCategory, setSelectedCategory] = useState('all'); // all, taban, ust
-  const [selectedBrand, setSelectedBrand] = useState('all');       // all, yesilbasak, toros, gubretas
+  const [selectedCategory, setSelectedCategory] = useState('all'); 
+  const [selectedBrand, setSelectedBrand] = useState('all');   
 
-  // --- YEŞİL BAŞAK ÜRÜN LİSTESİ ---
+
   const gubreUrunleri = [
-    // --- TABAN GÜBRELERİ (NPK, DAP vb.) ---
+
     {
       id: 1,
       title: 'Yeşil Başak NPK 15-15-15 (+15 SO₃)',
@@ -74,7 +73,6 @@ const GubreGrubu = () => {
       specs: ['%46 Fosfor', 'Hızlı Köklenme', 'Diamonyum Fosfat'],
       image: '/assets/images/yb_dap.png'
     },
-    // --- ÜST GÜBRELER (AZOTLU) ---
     {
       id: 10,
       title: 'Yeşil Başak Nitro Star (Azot)',
