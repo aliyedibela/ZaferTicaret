@@ -51,6 +51,7 @@ const Navbar = () => {
         
         <div className="nav-left">
           <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
+          <img src="/favicon.png" alt="Zafer Ticaret" className="logo-img" />
             <div className="logo-text">
               <span className="brand">ZAFER</span>
               <span className="sub">TİCARET</span>
