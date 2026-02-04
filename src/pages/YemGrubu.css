@@ -1,10 +1,7 @@
-/* --- TEMEL YAPILANDIRMA --- */
 .yem-container { background-color: #ffffff; padding-bottom: 100px; }
-
-/* HERO SECTION */
 .yem-hero {
   height: 500px;
-  background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1774&auto=format&fit=crop');
+  background-image: url('/assets/images/yemsection.png');
   background-size: cover; background-position: center; position: relative;
   display: flex; align-items: center; margin-bottom: 50px;
 }
@@ -15,10 +12,10 @@
 .yem-hero-content p { font-size: 1.2rem; opacity: 0.9; line-height: 1.6; }
 .yem-tag { color: var(--wheat); font-weight: 800; letter-spacing: 2px; display: block; margin-bottom: 10px; }
 
-/* FEATURE KARTLARI */
+
 .yem-features-row {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
-  margin-top: -100px; margin-bottom: 40px; /* Filtre geleceği için boşluk azaldı */
+  margin-top: -100px; margin-bottom: 40px;
 }
 .yem-f-card {
   background: white; padding: 40px 30px; border-radius: 15px;
@@ -29,8 +26,6 @@
 .yem-f-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
 .yem-f-card h3 { font-size: 1.3rem; margin-bottom: 25px; color: var(--primary-dark); }
 .yem-f-card p { font-size: 0.95rem; color: #64748b; line-height: 1.5; }
-
-/* --- ORTALANMIŞ FİLTRE KUTUSU --- */
 .advanced-filter {
   background: white; padding: 60px; border-radius: 24px;
   border: 1px solid #e2e8f0; box-shadow: 0 20px 50px rgba(0,0,0,0.06);
@@ -54,14 +49,12 @@
 }
 .f-options button:hover { background: white; border-color: var(--primary); color: var(--primary); transform: translateY(-3px); }
 .f-options button.active { background: var(--primary); color: white; border-color: var(--primary); box-shadow: 0 10px 20px rgba(21, 128, 61, 0.25); }
-
-/* --- ÜRÜN LİSTESİ --- */
 .yem-product-list { padding-top: 0; }
 .section-title { text-align: center; margin-bottom: 90px; }
 .section-title h2 { font-size: 2.8rem; font-weight: 900; color: #1e293b; margin-bottom: 20px; }
 .title-bar { width: 80px; height: 5px; background: var(--wheat); margin: 0 auto; border-radius: 3px; }
 
-/* KART TASARIMI */
+
 .yem-item-card {
   display: grid; grid-template-columns: 450px 1fr; gap: 50px;
   background: #f8fafc; border-radius: 24px; margin-bottom: 60px;
@@ -79,16 +72,12 @@
 .yem-item-btns { display: flex; gap: 15px; }
 .yem-btn-main { background: var(--primary); color: white; padding: 15px 35px; border-radius: 10px; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 10px; transition: 0.3s; }
 .yem-btn-wa { background: #25D366; color: white; width: 55px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.4rem; text-decoration: none; transition: 0.3s; }
-
-/* NO RESULT KUTUSU */
 .no-result-box { text-align: center; padding: 60px; background: #f8fafc; border-radius: 20px; border: 2px dashed #cbd5e1; }
 .no-result-box button { margin-top: 20px; background: var(--wheat); color: white; border: none; padding: 10px 25px; border-radius: 8px; cursor: pointer; font-weight: 700; }
 
-/* --- RESPONSIVE / MOBİL AYARLAR --- */
 @media (max-width: 992px) {
   .yem-item-card { grid-template-columns: 1fr; height: auto; }
   .yem-item-image { height: 350px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; }
-  /* İŞTE SİHİRLİ DOKUNUŞ: CONTAIN */
   .yem-item-image img { width: 100%; height: 100%; object-fit: contain; }
   .yem-features-row { grid-template-columns: 1fr; margin-top: 20px; }
   .yem-hero-content h1 { font-size: 2.5rem; }

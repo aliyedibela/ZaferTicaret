@@ -51,7 +51,7 @@ const Navbar = () => {
         
         <div className="nav-left">
           <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
-          <img src="/favicon.png" alt="Zafer Ticaret" className="logo-img" />
+            <img src="/favicon.png" alt="Zafer Ticaret" className="logo-img" />
             <div className="logo-text">
               <span className="brand">ZAFER</span>
               <span className="sub">TİCARET</span>
@@ -66,6 +66,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>Anasayfa</Link>
             </li>
+            
             <li className="nav-item dropdown-li" 
                 onMouseEnter={() => onMouseEnter('kurumsal')}
                 onMouseLeave={onMouseLeave}
@@ -95,10 +96,28 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/iletisim" className="nav-links" onClick={closeMobileMenu}>İletişim</Link>
             </li>
-
             <li className="nav-item mobile-only">
                <Link to="/iletisim" className="btn-mobile" onClick={closeMobileMenu}>BİZE ULAŞIN</Link>
             </li>
+            <li className="nav-item mobile-only" style={{ marginTop: '15px' }}>
+               <a 
+                 href="/assets/docs/ZaferTicaretEKatalog.pdf" 
+                 target="_blank" 
+                 className="btn-mobile" 
+                 style={{ 
+                   background: 'var(--wheat)', 
+                   color: 'white', 
+                   display: 'flex', 
+                   alignItems: 'center', 
+                   justifyContent: 'center', 
+                   gap: '10px' 
+                 }} 
+                 onClick={closeMobileMenu}
+               >
+                 E-KATALOG<FaFileAlt />
+               </a>
+            </li>
+
           </ul>
         </div>
         <div className="nav-right-content">
@@ -109,7 +128,6 @@ const Navbar = () => {
               <span className="value">+90 (530) 543 53 41</span>
             </div>
           </a>
-
           <a 
             href="/assets/docs/ZaferTicaretEKatalog.pdf" 
             target="_blank" 

@@ -10,14 +10,14 @@ const TohumGrubu = () => {
       title: 'Sertifikalı Ekmeklik Buğday',
       desc: 'Kışlık ekime uygun, soğuğa ve kuraklığa dayanıklı, yüksek glüten değerli ekmeklik buğday tohumu.',
       specs: ['Sertifikalı', 'Yüksek Verim', 'Hastalıklara Dayanıklı'],
-      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=1925&auto=format&fit=crop'
+      image: '/assets/images/tohum2.png'
     },
     {
       id: 2,
       title: 'Hibrit Silajlık Mısır',
       desc: 'Bol yapraklı, yüksek boylu ve yüksek enerji değerine sahip silajlık mısır tohumu çeşitleri.',
       specs: ['Hızlı Gelişim', 'Yüksek Tonaj', 'ADF/NDF Dengeli'],
-      image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?q=80&w=1770&auto=format&fit=crop'
+      image: '/assets/images/tohum1.png'
     }
   ];
 

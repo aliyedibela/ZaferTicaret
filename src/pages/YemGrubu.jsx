@@ -254,8 +254,6 @@ const YemGrubu = () => {
       specs: ['Koyun Özel', 'Süt Artışı', 'Sağlıklı Sürü'],
       image: '/assets/images/koyunsut.png'
     },
-
-    // --- KANATLI YEMLERİ ---
     {
       id: 28,
       title: 'Proyem Etlik 1 (Civciv)',
@@ -312,15 +310,14 @@ const YemGrubu = () => {
     }
   ];
 
-  // --- FİLTRELEME MANTIĞI (DÜZELTİLDİ: item.type kullanıldı) ---
+
   const filteredProducts = yemUrunleri.filter(item => {
-    // selectedCategory ile item.type'ı karşılaştırıyoruz
+
     const categoryMatch = selectedCategory === 'all' || item.type === selectedCategory;
     const brandMatch = selectedBrand === 'all' || item.brand === selectedBrand;
     return categoryMatch && brandMatch;
   });
 
-  // Başlık Metnini Dinamik Ayarla
   const getTitle = () => {
     let title = selectedBrand === 'all' ? '' : selectedBrand.toUpperCase() + ' ';
     
@@ -334,7 +331,6 @@ const YemGrubu = () => {
 
   return (
     <div className="yem-container">
-      {/* HERO SECTION */}
       <section className="yem-hero">
         <div className="yem-hero-overlay"></div>
         <div className="container yem-hero-content">
@@ -343,8 +339,6 @@ const YemGrubu = () => {
           <p>Erzurum'un iklim şartlarına ve hayvan ırklarına en uygun rasyonlarla hazırlanmış, taze ve yüksek enerjili yem grupları.</p>
         </div>
       </section>
-
-      {/* ÖZELLİKLER */}
       <section className="yem-features-row container">
         <div className="yem-f-card">
           <div className="yem-f-icon"><FaFlask /></div>
@@ -362,13 +356,10 @@ const YemGrubu = () => {
           <p>Bölgedeki binlerce besicinin 20 yıldır değişmez tercihiyiz.</p>
         </div>
       </section>
-
-      {/* --- FİLTRE ALANI --- */}
       <section className="advanced-filter container">
         <div className="filter-title"><FaFilter /> ÜRÜN FİLTRELEME</div>
         
         <div className="filter-wrapper">
-          {/* 1. Kategori Seçimi */}
           <div className="filter-group">
             <span className="f-head">Hayvan Türü:</span>
             <div className="f-options">
@@ -378,8 +369,6 @@ const YemGrubu = () => {
               <button className={selectedCategory === 'kanatli' ? 'active' : ''} onClick={() => setSelectedCategory('kanatli')}>Kanatlı</button>
             </div>
           </div>
-
-          {/* 2. Marka Seçimi */}
           <div className="filter-group">
             <span className="f-head">Marka:</span>
             <div className="f-options">
@@ -389,8 +378,6 @@ const YemGrubu = () => {
           </div>
         </div>
       </section>
-
-      {/* ÜRÜN LİSTESİ */}
       <section className="yem-product-list container">
         <div className="section-title">
           <h2>{getTitle()}</h2>

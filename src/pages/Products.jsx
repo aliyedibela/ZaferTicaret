@@ -103,7 +103,7 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.title} 
-                  onError={(e) => {e.target.src = 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1774&auto=format&fit=crop'}}
+                  onError={(e) => {e.target.src = '/assets/images/yemsection.png';}}
                 />
                 <div className="card-badge">{product.badge}</div>
               </div>

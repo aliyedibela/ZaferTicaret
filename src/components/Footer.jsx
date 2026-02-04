@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -50,10 +50,6 @@ const Footer = () => {
             <li>
               <FaPhoneAlt className="c-icon" />
               <a href="tel:+905305435341">+90 (530) 543 53 41</a>
-            </li>
-            <li>
-              <FaEnvelope className="c-icon" />
-              <a href="mailto:info@zaferticaret.com">info@zaferticaret.com</a>
             </li>
           </ul>
         </div>
